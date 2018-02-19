@@ -1,0 +1,4 @@
+C:\Users\20-8-15\Documents\SharpDevelop Projects\Temp Delete\bin\Release\Temp Delete.exe.config
+C:\Users\20-8-15\Documents\SharpDevelop Projects\Temp Delete\bin\Release\Temp Delete.exe
+C:\Users\20-8-15\Documents\SharpDevelop Projects\Temp Delete\obj\Release\Temp Delete.csprojResolveAssemblyReference.cache
+C:\Users\20-8-15\Documents\SharpDevelop Projects\Temp Delete\obj\Release\Temp Delete.exe
