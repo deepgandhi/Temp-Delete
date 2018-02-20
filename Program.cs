@@ -9,11 +9,13 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Windows.Forms;
+
 
 namespace Temp_Delete
 {
 	class Program
-	{
+	{public static String output;
 		public static void Main(string[] args)
 		{	String temp=Environment.GetEnvironmentVariable("TEMP");
 			IEnumerable<String> a=Directory.EnumerateDirectories(temp);
@@ -22,7 +24,7 @@ namespace Temp_Delete
 				try
 				{
 					Directory.Delete(b,true);
-					Console.Out.WriteLine(b+ "  Deleted");
+					output+=b+ "  Deleted \n";
 				}
 				catch {
 					Console.Out.WriteLine("  Pass");
@@ -36,14 +38,16 @@ namespace Temp_Delete
 				try
 				{
 					File.Delete(d);
-					Console.Out.WriteLine(d+"  Deleted");
+					output+=d+"  Deleted \n";
 				}
 				catch{
 				
 					Console.Out.WriteLine(d+"  Pass");
 				}
-			
-			
+		
+				Console.Out.WriteLine(output);
+				new MainForm(output);
+				Application.Exit();
 			}
 		}
 		
